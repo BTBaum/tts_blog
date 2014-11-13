@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 
 
-  # resources :posts  #is equivilent to everything below:
+  resources :posts  #is equivilent to everything below:
 
 #     posts GET    /posts => posts#index
 #           POST   /posts => posts#create
@@ -25,7 +25,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/services'
 
-  get 'static_pages/contacts'
+  get 'static_pages/contact'
+
+  get 'users/:id' => 'users#show'
 
   root to: 'posts#index'
 
