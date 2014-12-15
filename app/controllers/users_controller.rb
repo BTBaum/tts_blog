@@ -2,6 +2,10 @@ class UsersController < ApplicationController
 	def show
 		@user = User.find(params[:id])
 	end
+
+	def index
+		@users = User.all
+	end
 end
 
 
@@ -9,5 +13,5 @@ end
 
 # by setting an instance variable (@user) on the controller, 
 # that variable will magically be available to the view
-# params is a hash containing any parameters that came into 
+# params as a hash containing any parameters that came into 
 # the controller from the URL (and other places)

@@ -11,15 +11,17 @@ Rails.application.routes.draw do
 
 
   resources :posts  #is equivilent to everything below:
+  resources :users
 
-#     posts GET    /posts => posts#index
-#           POST   /posts => posts#create
-#  new_post GET    /posts/1/new => posts#new
+# ALL 7 OF THE RESTFUL ACTIONS!!!!!!
+#     posts GET    /posts        => posts#index
+#           POST   /posts        => posts#create
+#  new_post GET    /posts/1/new  => posts#new
 # edit_post GET    /posts/1/edit => posts#edit
-#      post GET    /posts/1 => posts#show
-#           PATCH  /posts/1 => posts#update
-#           PUT    /posts/1 => posts#update
-#           DELETE /posts/1 => posts#destroy
+#      post GET    /posts/1      => posts#show
+#           PATCH  /posts/1      => posts#update
+#           PUT    /posts/1      => posts#update
+#           DELETE /posts/1      => posts#destroy
 #      root GET    /   
 
 
